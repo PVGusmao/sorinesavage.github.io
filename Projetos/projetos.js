@@ -8,7 +8,7 @@ const createDivAndAddToSection = ({target}) => {
   const gif = document.createElement('img');
   gif.className = target.innerHTML;
   gif.className = 'container-video';
-  gif.src = `../__videos/${target.innerHTML}.gif`;
+  gif.src = `https://user-images.githubusercontent.com/63107666/159835340-4eb9860b-738f-4eac-b572-8490a2392e4b.mp4`;
   const source = document.createElement('source');
   gif.appendChild(source);
   divVideo.appendChild(gif);
