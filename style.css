@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: rgb(241, 229, 172);
+}
+
+header {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  height: 15%;
+}
+
+.containerHeader {
+  display: flex;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+  height: 100%;
+  width: 98.5%;
+  justify-content: space-between;
+  background-color: rgb(248, 242, 214);
+  border: 1px solid rgb(184, 174, 124);
+  box-shadow: 4px 2px 10px black;
+}
+
+.linkPortifolio {
+  text-decoration: none;
+  color: black;
+  text-shadow: 1px 1px 3px black;
+}
+
+header a h1:hover {
+  text-shadow: 0 0 0 black;
+}
+
+.linkPortifolio:active {
+  -webkit-text-fill-color: white; 
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+h1 {
+  padding-left: 10px;
+}
+
+.navegation {
+  display: flex;
+  padding-right: 10px;
+  justify-content: space-evenly;
+  width: 15%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.listSites {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.listSites li {
+  background-color: rgb(248, 242, 214);;
+  border-radius: 5px;
+  text-transform: uppercase;
+  list-style: none;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  width: 90px;
+  padding: 10px;
+  margin: 10px;
+  height: auto;
+  cursor: pointer;
+  border: 1px black solid;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+  transition: 250ms;
+}
+
+.listSites li:hover {
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  transform: scale(1);
+  animation: pulse 1s infinite;
+  border-radius: 0;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+
+  70% {
+	transform: scale(1);
+	box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+	transform: scale(0.95);
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+.projects {
+  text-decoration: none;
+  color: black;
+}
+
+.about {
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  height: 75%;
+  padding-bottom: 20px;
+  margin: 10px;
+}
+
+.habilities {
+  box-shadow: 4px 2px 10px black;
+  display: flex;
+  height: 100%;
+  border: 1px solid rgb(184, 174, 124);
+  padding: 10px;
+  background-color: rgb(248, 242, 214);;
+}
+
+.imgPortifolio {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-size: large;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.imgPauloVictor {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.softSkills {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-left: 1px solid black;
+}
+
+.softSkillImage {
+  width: 300px;
+  margin: 5px auto;
+  border: 1px solid black;
+}
+
+.hardSkills {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 100%;
+}
+
+.hardSkillImage {
+  width: 300px;
+  margin: 5px auto;
+  border: 1px solid black;
+}
+
+footer {
+  height: 10%;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.divFooter {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(184, 174, 124);
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  background-color: rgb(248, 242, 214);
+  border-radius: 0 0 10px 10px;
+  font-size: 10px;
+  box-shadow: 4px 2px 10px black;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+}
+
+.contact h3 {
+  margin-left: 5px;
+}
+
+.contact-image {
+  width: 10px;
+}
+
+/* A partir daqui, código para dar resonsividade a página */
+
+@media screen and (max-width: 412px) {    
+
+  .habilities {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 0;
+  }
+
+  .imgPortifolio {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .softSkills {
+    border-left: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid black;
+  }
+
+  .hardSkills {
+    border-top: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .containerHeader{
+    margin: 0 10px;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .navegation {
+    width: 40%;
+    justify-content: space-evenly;
+  }
+    
+  .listSites {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .listTags {
+    padding-top: 10px;
+  }
+
+  main {
+    height: 142%;
+  }
+}

@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+  }
+  
+html, body {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+  
+body {
+  background-color: rgb(241, 229, 172);
+}
+  
+header {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  height: 15%;
+}
+  
+.containerHeader {
+  display: flex;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+  height: 100%;
+  width: 98.5%;
+  justify-content: space-between;
+  background-color: rgb(248, 242, 214);
+  border: 1px solid rgb(184, 174, 124);
+  box-shadow: 4px 2px 10px black;
+}
+  
+.linkPortifolio {
+  text-decoration: none;
+  color: black;
+  text-shadow: 1px 1px 3px black;
+}
+  
+.linkPortifolio:active {
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+  
+h1 {
+  padding-left: 10px;
+}
+  
+.navegation {
+  display: flex;
+  padding-right: 10px;
+  justify-content: space-evenly;
+  width: 15%;
+}
+  
+header a h1:hover {
+  text-shadow: 0 0 0 black;
+}
+  
+main {
+  margin: 10px;
+}
+
+.container-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-time-line {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.time-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: 110px;
+  border: 1px solid rgb(184, 174, 124);
+  background-color: rgb(248, 242, 214);
+  box-shadow: 4px 2px 10px black;
+  overflow: auto;
+  width: 60%;
+  height: 120px;
+}
+
+.articles {
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.div-articles {
+  padding: 2px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: black;
+  margin: 21px;
+}
+
+.section-about-item {
+  margin-top: 10px;
+  border: 1px solid rgb(184, 174, 124);
+  background-color: rgb(248, 242, 214);
+  box-shadow: 4px 2px 10px black;
+  padding: 10px 20px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: justify;
+}
+
+footer {
+  height: 10%;
+  width: 100%;
+}
+  
+.divFooter {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(184, 174, 124);
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  background-color: rgb(248, 242, 214);
+  border-radius: 0 0 10px 10px;
+  font-size: 10px;
+  box-shadow: 4px 2px 10px black;
+}
+  
+.contact {
+  display: flex;
+  align-items: center;
+}
+  
+.contact h3 {
+  margin-left: 5px;
+}
+  
+.contact-image {
+  width: 10px;
+}
+
+/* Personalizando scrollbar da página */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px darkgray; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: darkgrey; 
+}
