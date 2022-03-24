@@ -11,7 +11,7 @@ const createDivAndAddToSection = ({target}) => {
   video.controls = 'controls';
   const source = document.createElement('source');
   console.log(target);
-  source.src = `../__videos/${target.innerHTML.toLowerCase()}.mp4`;
+  source.src = `https://github.com/sorinesavage/sorinesavage.github.io/raw/main/__videos/${target.innerHTML.toLowerCase()}.mp4`;
   console.log(source);
   video.appendChild(source);
   divVideo.appendChild(video);
